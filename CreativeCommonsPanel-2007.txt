@@ -1,0 +1,52 @@
+<?xml version="1.0">
+
+<!DOCTYPE panel SYSTEM "http://ns.adobe.com/custompanels/1.0">
+
+<panel title="$$$/CustomPanels/CreativeCommons/PanelName=Creative Commons" version="1" type="custom_panel">
+
+        group(placement: place_column, spacing: gSpace, vertical: align_top, horizontal: align_fill)
+                {
+
+                group(placement: place_row, spacing: gSpace, horizontal: align_fill)
+                        {
+                        icon(builtin_icon:builtin_icon_alert, width: 20, height: 20);
+                        static_text(name: '$$$/CustomPanels/CreativeCommons/VisitHelp1=Visit the URL below to learn more about Creative Commons license information.', horizontal: align_fill, label: false);
+                        }
+                group(placement: place_row, spacing: gSpace, horizontal: align_fill)
+                        {
+
+                edit_text(name: '$$$/CustomPanels/CreativeCommons/Help=http://creativecommons.org/technology/xmp-help', horizontal: align_center, label: false );
+                        }
+
+
+                separator(horizontal: align_fill);              group(placement: place_row, spacing: gSpace, horizontal: align_fill)
+                        {
+                        static_text(name: '$$$/CustomPanels/CreativeCommons/License/CopyrightInfoURL=&Copyright Info URL:', horizontal: align_right, vertical: align_top, font: font_big_right);
+                        edit_text(horizontal: align_fill, xmp_namespace: xap_ns_xap_rights, xmp_path: 'WebStatement');
+                        mru_popup(xmp_namespace: xap_ns_xap_rights, xmp_path: 'WebStatement', no_check: true, visible: false, vertical: align_top);
+                        }
+
+                group(placement: place_row, spacing: gSpace, horizontal: align_fill)
+                        {
+                        static_text(name: '$$$/CustomPanels/CreativeCommons/CopyrightNotice=Copyright Notice:', horizontal: align_left, font: font_big_right, vertical: align_top);
+                        edit_text(horizontal: align_fill, height: 54, xmp_namespace: xap_ns_xap_rights, xmp_path: 'Copyright', container_type: alt_struct, v_scroller: true);
+                        mru_popup(xmp_namespace: xap_ns_xap_rights, xmp_path: 'Copyright', container_type: alt_struct, no_check: true, vertical: align_top);
+                        }
+
+                group(placement: place_row, spacing: gSpace, horizontal: align_fill)
+                        {
+                        static_text(name: '$$$/CustomPanels/CreativeCommons/CopyrightState=&Copyright Status:', horizontal: align_left, font: font_big_right);
+                        tristate_popup(items: '$$$/CustomPanels/CreativeCommons/CopyrightPopupItems=Unknown{};Copyrighted{True};Public Domain{False}', xmp_namespace: xap_ns_xap_rights, xmp_path: 'Marked');
+                        }
+
+                group(placement: place_row, spacing: gSpace, horizontal: align_fill)
+                        {
+                        static_text(name: '$$$/CustomPanels/CreativeCommons/LicenseURL=&License URL:', horizontal: align_right, vertical: align_top, font: font_big_right);
+                        edit_text(horizontal: align_fill, xmp_ns_prefix: 'cc', xmp_namespace: 'http://creativecommons.org/ns#', xmp_path: 'license');
+                        mru_popup(xmp_ns_prefix: 'cc', xmp_namespace: 'http://creativecommons.org/ns#', xmp_path: 'license', no_check: true, visible: false, vertical: align_top);
+                        }
+
+                separator(horizontal: align_fill);
+
+                }
+</panel>
