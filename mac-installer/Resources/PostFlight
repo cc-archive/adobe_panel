@@ -1,0 +1,5 @@
+#!/bin/sh
+DESTDIR="$HOME"/Library/Application Support/Adobe/XMP/Custom File Info Panels"
+mkdir -p "$DESTDIR"
+mv /tmp/CreativeCommonsPanel-2007.txt "$DESTDIR/"
+
