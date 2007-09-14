@@ -2,8 +2,9 @@ Following the suggestions at
 http://www.osxgnu.org/info/osxpackages.html, here is a directory 
 structure that will be used for generating an OS X installer package.
 
-Note that the panel itself is installed to /tmp/ first and then moved
-to the right place by a shell script in the PostFlight.
+Note that the panel itself is part of the postflight shell script.  NOTE 
+that if you update the panel you must update that lousy script too.
 
-NOTE! You must manually copy the CreativeCommonsPanel-2007.txt into 
-Package_Root/tmp/.
+The reason to do it that way is so we can be sure to put it in the right 
+directory, as well to make sure the ownership is right.  Other working 
+suggestions welcome.
