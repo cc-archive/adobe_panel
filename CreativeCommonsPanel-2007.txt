@@ -21,7 +21,7 @@
 
                 separator(horizontal: align_fill);              group(placement: place_row, spacing: gSpace, horizontal: align_fill)
                         {
-                        static_text(name: '$$$/CustomPanels/CreativeCommons/License/CopyrightInfoURL=&Copyright Info URL:', horizontal: align_right, vertical: align_top, font: font_big_right);
+                        static_text(name: '$$$/CustomPanels/CreativeCommons/License/CopyrightInfoURL=&Copyright Info (Web Statement) URL:', horizontal: align_right, vertical: align_top, font: font_big_right);
                         edit_text(horizontal: align_fill, xmp_namespace: xap_ns_xap_rights, xmp_path: 'WebStatement');
                         mru_popup(xmp_namespace: xap_ns_xap_rights, xmp_path: 'WebStatement', no_check: true, visible: false, vertical: align_top);
                         }
