@@ -4,7 +4,7 @@
 
 ; HM NIS Edit Wizard helper defines
 !define PRODUCT_NAME "CC Metadata Panel for Adobe XMP"
-!define PRODUCT_VERSION "0.1"
+!define PRODUCT_VERSION "2007a"
 !define PRODUCT_PUBLISHER "Creative Commons"
 !define PRODUCT_WEB_SITE "http://wiki.creativecommons.org/Creative_Commons_Panel"
 !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
